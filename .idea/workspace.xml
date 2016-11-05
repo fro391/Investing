@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e008c9f-b445-4c9e-ae93-2d58f876c7bc" name="Default" comment="" />
+    <list default="true" id="6e008c9f-b445-4c9e-ae93-2d58f876c7bc" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/YQL/data/HistRaw.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/YQL/data/KeyStats.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/YQL/data/NewsDate.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/YQL/data/VPN.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/YQL/data/keystats2015-07-17.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/YQL/data/keystats2015-08-24.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/YQL/data/keystats2015-10-02.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/YQL/data/keystats2015-10-18.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/YQL/data/keystats2015-10-28.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/YQL/data/keystats2015-11-03.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/YQL/data/keystats2015-11-20.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/YQL/data/keystats2015-11-22.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/YQL/data/keystats2015-12-24.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/YQL/data/keystats2016-02-22.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/YQL/data/keystats_Industry2015-04-05.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/YQL/data/keystats_Industry2015-04-06.xlsx" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ArticleScrape/GooGNewsDate.py" afterPath="$PROJECT_DIR$/ArticleScrape/GooGNewsDate.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ArticleScrape/data/GoogYahooNewsCount.csv" afterPath="$PROJECT_DIR$/ArticleScrape/data/GoogYahooNewsCount.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ArticleScrape/data/NewsDate.csv" afterPath="$PROJECT_DIR$/ArticleScrape/data/NewsDate.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ArticleScrape/data/NewsDateG.csv" afterPath="$PROJECT_DIR$/ArticleScrape/data/NewsDateG.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ArticleScrape/data/NewsDateHist.csv" afterPath="$PROJECT_DIR$/ArticleScrape/data/NewsDateHist.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/YQL/data/VPNoutput.csv" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/YQL/test.py" afterPath="$PROJECT_DIR$/YQL/test.py" />
+    </list>
     <ignored path="Investing.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,41 +47,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="VFN_Analyzer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/YQL/VFN_Analyzer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/YQL/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewsDate.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ArticleScrape/NewsDate.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="61" column="40" selection-start-line="61" selection-start-column="40" selection-end-line="61" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="GooGNewsDate.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ArticleScrape/GooGNewsDate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7589286">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state vertical-scroll-proportion="-1.0491072">
+              <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -69,6 +65,9 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -105,7 +104,6 @@
         <option value="$PROJECT_DIR$/YQL/KeyStats.py" />
         <option value="$PROJECT_DIR$/YQL/VFN_Analyzer.py" />
         <option value="$PROJECT_DIR$/ArticleScrape/RSS_URL.py" />
-        <option value="$PROJECT_DIR$/YQL/test.py" />
         <option value="$PROJECT_DIR$/ArticleScrape/KeywordsScrape.py" />
         <option value="$PROJECT_DIR$/ML/Regression_Intro.py" />
         <option value="$PROJECT_DIR$/ML/breast_cancer_data.csv" />
@@ -113,6 +111,7 @@
         <option value="$PROJECT_DIR$/ML/clustering2.py" />
         <option value="$PROJECT_DIR$/ArticleScrape/NewsDate.py" />
         <option value="$PROJECT_DIR$/ArticleScrape/GooGNewsDate.py" />
+        <option value="$PROJECT_DIR$/YQL/test.py" />
       </list>
     </option>
   </component>
@@ -199,7 +198,35 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Sentiments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Investing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Investing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="ML" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Investing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Investing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Glassdoor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -241,7 +268,7 @@
       <recent name="C:\Users\SUSAN\Desktop\Python\Investing\Sentiments" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.NewsDate">
+  <component name="RunManager" selected="Python.GooGNewsDate">
     <configuration default="false" name="KeywordsScrape" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -585,12 +612,12 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16398244" sideWeight="0.48918918" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16325037" sideWeight="0.48918918" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30990416" sideWeight="0.5088626" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24921136" sideWeight="0.4911374" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24921136" sideWeight="0.4911374" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25256222" sideWeight="0.5108108" order="2" side_tool="true" content_ui="tabs" />
@@ -619,7 +646,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="49" />
+      <option name="time" value="50" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -855,13 +882,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sentiments/SA_YAHOO_Sentiment_Thread.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64">
-          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/YQL/Main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -943,23 +963,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/YQL/VFN_Analyzer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/YQL/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -967,22 +970,41 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21002387">
           <caret line="485" column="4" selection-start-line="485" selection-start-column="0" selection-end-line="485" selection-end-column="4" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sentiments/SA_YAHOO_Sentiment_Thread.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.169967">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ArticleScrape/NewsDate.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="61" column="40" selection-start-line="61" selection-start-column="40" selection-end-line="61" selection-end-column="40" />
-          <folding />
+          <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YQL/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24257426">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YQL/VFN_Analyzer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.8266898">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ArticleScrape/GooGNewsDate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7589286">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state vertical-scroll-proportion="-1.0491072">
+          <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
           <folding />
         </state>
       </provider>

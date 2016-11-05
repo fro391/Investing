@@ -1,4 +1,5 @@
 import pandas as pd
+from time import gmtime, strftime
 
 def dataSlicing():
 #analyzing with pandas
@@ -42,4 +43,4 @@ def dataSlicing():
     #VPNout = VPNout.ix[VPNout['50MA%']>0.05,['Ticker&Date','EPS','AvgV%','VF%','priceChange','50MA%','Title']]
 
     #Saving to file
-    VPNout.to_csv('data\VPNoutput'+'.csv')
+    VPNout.to_csv('data\VPNoutput'+strftime("%Y-%m-%d", gmtime())+'.csv')

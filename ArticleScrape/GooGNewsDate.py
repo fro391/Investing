@@ -29,7 +29,6 @@ def NewsDateG (symbol):
     elif (len(titles) * len(dates)) == 0:
         pass
     else:
-        print symbol, titles, dates
         toBeWritten = ''
         c = -1
         #writes symbol, title, and date of news articles
