@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e008c9f-b445-4c9e-ae93-2d58f876c7bc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ML/Stock_ML.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ML/ML_2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ML/ML_3.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ArticleScrape/data/GoogYahooNewsCount.csv" afterPath="$PROJECT_DIR$/ArticleScrape/data/GoogYahooNewsCount.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ArticleScrape/data/NewsDate.csv" afterPath="$PROJECT_DIR$/ArticleScrape/data/NewsDate.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ArticleScrape/data/NewsDateG.csv" afterPath="$PROJECT_DIR$/ArticleScrape/data/NewsDateG.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ArticleScrape/data/NewsDateHist.csv" afterPath="$PROJECT_DIR$/ArticleScrape/data/NewsDateHist.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ML/Stock_ML.py" afterPath="$PROJECT_DIR$/ML/Stock_ML.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/YQL/data/VPN.csv" afterPath="$PROJECT_DIR$/YQL/data/VPN.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/YQL/data/VPNoutput.csv" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput.csv" />
     </list>
@@ -30,14 +32,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="clustering.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="clustering.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ML/clustering.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.68869936">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="92" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Stock_ML.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ML/Stock_ML.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ML_3.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ML/ML_3.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -97,6 +119,9 @@
         <option value="$PROJECT_DIR$/ArticleScrape/NewsDate.py" />
         <option value="$PROJECT_DIR$/ArticleScrape/GooGNewsDate.py" />
         <option value="$PROJECT_DIR$/YQL/test.py" />
+        <option value="$PROJECT_DIR$/ML/ML_1.py" />
+        <option value="$PROJECT_DIR$/ML/ML_2.py" />
+        <option value="$PROJECT_DIR$/ML/ML_3.py" />
         <option value="$PROJECT_DIR$/ML/Stock_ML.py" />
       </list>
     </option>
@@ -132,16 +157,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -204,6 +219,16 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scratches" />
     </panes>
   </component>
@@ -227,23 +252,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.Stock_ML">
-    <configuration default="false" name="KeywordsScrape" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ArticleScrape" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Investing" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ArticleScrape/KeywordsScrape.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="Regression_Intro" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -308,6 +316,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Investing" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ML/Stock_ML.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ML_1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ML" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Investing" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ML/ML_1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -537,19 +562,19 @@
       <item index="2" class="java.lang.String" itemvalue="Python.YahooTickerDownloader" />
       <item index="3" class="java.lang.String" itemvalue="Python.Lotto Generator" />
       <item index="4" class="java.lang.String" itemvalue="Python.NewsDate" />
-      <item index="5" class="java.lang.String" itemvalue="Python.KeywordsScrape" />
-      <item index="6" class="java.lang.String" itemvalue="Python.Regression_Intro" />
-      <item index="7" class="java.lang.String" itemvalue="Python.clustering" />
-      <item index="8" class="java.lang.String" itemvalue="Python.clustering2" />
-      <item index="9" class="java.lang.String" itemvalue="Python.Stock_ML" />
+      <item index="5" class="java.lang.String" itemvalue="Python.Regression_Intro" />
+      <item index="6" class="java.lang.String" itemvalue="Python.clustering" />
+      <item index="7" class="java.lang.String" itemvalue="Python.clustering2" />
+      <item index="8" class="java.lang.String" itemvalue="Python.Stock_ML" />
+      <item index="9" class="java.lang.String" itemvalue="Python.ML_1" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.Stock_ML" />
-        <item index="1" class="java.lang.String" itemvalue="Python.clustering2" />
-        <item index="2" class="java.lang.String" itemvalue="Python.clustering" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Regression_Intro" />
-        <item index="4" class="java.lang.String" itemvalue="Python.KeywordsScrape" />
+        <item index="1" class="java.lang.String" itemvalue="Python.ML_1" />
+        <item index="2" class="java.lang.String" itemvalue="Python.clustering2" />
+        <item index="3" class="java.lang.String" itemvalue="Python.clustering" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Regression_Intro" />
       </list>
     </recent_temporary>
   </component>
@@ -568,14 +593,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16325037" sideWeight="0.48918918" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30990416" sideWeight="0.5088626" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21608832" sideWeight="0.4911374" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3533123" sideWeight="0.4911374" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25256222" sideWeight="0.5108108" order="2" side_tool="true" content_ui="tabs" />
@@ -609,27 +634,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/iChart/iChartThread.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/YQL/VFN_Analyzer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/YQL/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ArticleScrape/NewsDate.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -935,7 +939,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33663365">
           <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -943,7 +946,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.60714287">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -951,6 +953,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.057569295">
           <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ML/ML_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7329843">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ML/clustering.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="92" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -959,19 +976,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ML/Stock_ML.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7100213">
-          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ML/clustering.py">
+    <entry file="file://$PROJECT_DIR$/ML/ML_3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68869936">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
