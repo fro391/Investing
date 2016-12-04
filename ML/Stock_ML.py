@@ -9,6 +9,7 @@ from sklearn import preprocessing, cross_validation, neighbors, svm
 from sklearn.linear_model import LinearRegression
 import glob, os
 import datetime
+import cPickle as pk
 
 def ML (dir,file):
     #Learning data
@@ -26,6 +27,10 @@ def ML (dir,file):
 
     #Model training
     clf = LinearRegression()
+    #save Model
+    with open('stocks.p','wb') as f:
+        pk.dump(clf,f)
+    clf = pk.load(open('stocks.p','rb'))
     clf.fit(X, y)
 
     #print clf.score(X_test,y_test)
@@ -63,7 +68,7 @@ if __name__ == '__main__':
         file_list.append(file)
     file_list =  sorted(file_list,reverse = True)
 
-    for i in range(len(file_list)-2): #iterate through all available VPN files
+    for i in range(len(file_list)-3): #iterate through all available VPN files
         #Vlooking up today's price change to yesterday's price change
         df_today = pd.read_csv(data_dir + '%s' %file_list[i])[['Ticker&Date','priceChange']]
         df_today['Ticker&Date'] = df_today['Ticker&Date'].map(lambda x: x.lstrip('+-').rstrip('0123456789'))
