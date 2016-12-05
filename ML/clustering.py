@@ -2,6 +2,8 @@ import pandas as pd
 import urllib
 import numpy as np
 from sklearn import preprocessing, cross_validation, neighbors
+from sklearn.ensemble import GradientBoostingClassifier, AdaBoostClassifier, RandomForestClassifier
+from sklearn.tree import DecisionTreeClassifier, ExtraTreeClassifier
 import cPickle as pickle
 
 if __name__ == '__main__':
@@ -18,10 +20,10 @@ if __name__ == '__main__':
 
     X_train, X_test, y_train, y_test = cross_validation.train_test_split(X,y,test_size= 0.2)
 
-    '''clf = neighbors.KNeighborsClassifier()
+    clf = AdaBoostClassifier()
     clf.fit(X_train, y_train)
     with open('KNeighb.p','wb') as f:
-        pickle.dump(clf,f)'''
+        pickle.dump(clf,f)
 
     clf = pickle.load(open('KNeighb.p','rb'))
 

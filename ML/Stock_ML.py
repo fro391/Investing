@@ -7,9 +7,9 @@ import pandas as pd
 import numpy as np
 from sklearn import preprocessing, cross_validation
 from sklearn.linear_model import LinearRegression, LogisticRegression, BayesianRidge
-from sklearn.ensemble import GradientBoostingRegressor, AdaBoostRegressor
+from sklearn.ensemble import GradientBoostingRegressor, AdaBoostRegressor, RandomForestRegressor
 from sklearn.svm import LinearSVC
-from sklearn.tree import DecisionTreeRegressor
+from sklearn.tree import DecisionTreeRegressor, ExtraTreeRegressor
 from sklearn.neural_network import MLPRegressor
 import glob, os
 import cPickle as pk
@@ -28,17 +28,17 @@ def ML (dir,file):
     y = np.array(df['priceChange_y'])
     y = preprocessing.scale(y)
 
-    #X_train, X_test, y_train, y_test = cross_validation.train_test_split(X,y,test_size= 0.2)
+    X_train, X_test, y_train, y_test = cross_validation.train_test_split(X,y,test_size= 0.2)
 
     #Model training
-    clf = BayesianRidge()
-    clf.fit(X, y.astype(int)) #change float lable to int
+    clf = GradientBoostingRegressor()
+    clf.fit(X_train, y_train.astype(int)) #change float lable to int
     #save Model
     with open('stocks.p','wb') as f:
         pk.dump(clf,f)
     clf = pk.load(open('stocks.p','rb'))
 
-    #print clf.score(X_test,y_test.astype(int)) #change float lable to int
+    print clf.score(X_test,y_test.astype(int)) #change float lable to int
 
     #New data
     df = pd.read_csv(dir + file)
