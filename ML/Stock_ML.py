@@ -30,15 +30,26 @@ def ML (dir,file):
 
     X_train, X_test, y_train, y_test = cross_validation.train_test_split(X,y,test_size= 0.2)
 
-    #Model training
-    clf = GradientBoostingRegressor()
+    #Model 1 training
+    clf = BayesianRidge()
     clf.fit(X_train, y_train.astype(int)) #change float lable to int
+    print 'Bayesian ridge score is: ', clf.score(X_test,y_test.astype(int)) #change float lable to int
+    clf.fit(X, y.astype(int)) #change float lable to int
     #save Model
-    with open('stocks.p','wb') as f:
+    with open('stocksA.p','wb') as f:
         pk.dump(clf,f)
-    clf = pk.load(open('stocks.p','rb'))
+    clf = pk.load(open('stocksA.p','rb'))
 
-    print clf.score(X_test,y_test.astype(int)) #change float lable to int
+    #Model 2 training
+    clf2 = GradientBoostingRegressor()
+    clf2.fit(X_train, y_train.astype(int)) #change float lable to int
+    print 'Gradient boosting score is: ', clf2.score(X_test,y_test.astype(int)) #change float lable to int
+    clf2.fit(X, y.astype(int)) #change float lable to int
+    #save Model
+    with open('stocksB.p','wb') as f:
+        pk.dump(clf2,f)
+    clf2 = pk.load(open('stocksB.p','rb'))
+
 
     #New data
     df = pd.read_csv(dir + file)
@@ -48,8 +59,7 @@ def ML (dir,file):
     X_predict = np.array(df)
 
     Output = {}
-
-    #Output
+    #Output 1
     for i in X_predict:
         try:
             k = np.delete(i,0)
@@ -63,6 +73,22 @@ def ML (dir,file):
     print D_New
     D_New = sorted(D_New, key=D_New.get, reverse=True) #sort from highest to smallest
     print D_New
+
+    Output2 = {}
+    #Output 2
+    for i in X_predict:
+        try:
+            k = np.delete(i,0)
+            prediction = clf2.predict(k)
+            Output2[str(i[0][:-8])] = float(prediction)
+        except:
+            pass
+
+    D_New2 = {k: v for k, v in Output2.items() if v>0}#remove negative price increase predictions
+    print len(D_New2)
+    print D_New2
+    D_New2 = sorted(D_New2, key=D_New2.get, reverse=True) #sort from highest to smallest
+    print D_New2
 
 if __name__ == '__main__':
 
