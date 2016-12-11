@@ -13,8 +13,13 @@ from sklearn.tree import DecisionTreeRegressor, ExtraTreeRegressor
 from sklearn.neural_network import MLPRegressor
 import glob, os
 import cPickle as pk
+import datetime
 
-def ML (dir,file):
+import smtplib
+from email.mime.text import MIMEText
+
+def ML (dir,file,emailAddress,password):
+    msg = ''
     #Learning data
     df = pd.read_csv(dir + 'LearningFile.csv')
     df.replace('NaN',0,inplace = True)#Remove null
@@ -33,7 +38,7 @@ def ML (dir,file):
     #Model 1 training
     clf = BayesianRidge()
     clf.fit(X_train, y_train.astype(int)) #change float lable to int
-    print 'Bayesian ridge score is: ', clf.score(X_test,y_test.astype(int)) #change float lable to int
+    msg += 'Bayesian ridge score is: %s \n' % str(clf.score(X_test,y_test.astype(int))) #change float lable to int
     clf.fit(X, y.astype(int)) #change float lable to int
     #save Model
     with open('stocksA.p','wb') as f:
@@ -43,13 +48,13 @@ def ML (dir,file):
     #Model 2 training
     clf2 = GradientBoostingRegressor()
     clf2.fit(X_train, y_train.astype(int)) #change float lable to int
-    print 'Gradient boosting score is: ', clf2.score(X_test,y_test.astype(int)) #change float lable to int
+    msg += 'Gradient boosting score is: %s \n' % str(clf2.score(X_test,y_test.astype(int))) #change float lable to int
     clf2.fit(X, y.astype(int)) #change float lable to int
     #save Model
     with open('stocksB.p','wb') as f:
         pk.dump(clf2,f)
-    clf2 = pk.load(open('stocksB.p','rb'))
-
+    with open ('stocksB.p','rb') as f:
+        clf2 = pk.load(f)
 
     #New data
     df = pd.read_csv(dir + file)
@@ -69,10 +74,10 @@ def ML (dir,file):
             pass
 
     D_New = {k: v for k, v in Output.items() if v>0}#remove negative price increase predictions
-    print len(D_New)
-    print D_New
+    msg += (str(len(D_New))+ '\n')
+    msg += (str(D_New)+'\n')
     D_New = sorted(D_New, key=D_New.get, reverse=True) #sort from highest to smallest
-    print D_New
+    msg += (str(D_New) + '\n')
 
     Output2 = {}
     #Output 2
@@ -85,10 +90,27 @@ def ML (dir,file):
             pass
 
     D_New2 = {k: v for k, v in Output2.items() if v>0}#remove negative price increase predictions
-    print len(D_New2)
-    print D_New2
+    msg += (str(len(D_New2)) + '\n')
+    msg += (str(D_New2) + '\n')
     D_New2 = sorted(D_New2, key=D_New2.get, reverse=True) #sort from highest to smallest
-    print D_New2
+    msg += (str(D_New2) + '\n')
+
+    #send results to email
+    msg = MIMEText(msg)
+    msg ['Subject'] = '%s stock analysis' % str(datetime.datetime.today().strftime('%Y-%m-%d'))
+    msg ['From'] = emailAddress
+    msg ['To'] = emailAddress
+    try:
+        s = smtplib.SMTP('smtp-mail.outlook.com',25)
+        s.ehlo() # Hostname to send for this command defaults to the fully qualified domain name of the local host.
+        s.starttls() #Puts connection to SMTP server in TLS mode
+        s.ehlo()
+        s.login(emailAddress, password)
+        s.sendmail(emailAddress,emailAddress,msg.as_string())
+        s.quit()
+        print 'email sent to: %s' %emailAddress
+    except:
+        raise
 
 if __name__ == '__main__':
 
@@ -113,4 +135,8 @@ if __name__ == '__main__':
             outputF =  VPNOutput.append(learning_df).drop_duplicates().set_index('Ticker&Date')
             outputF.to_csv(data_dir +'LearningFile.csv')
 
-    ML(data_dir,file_list[0])
+    #retriev password
+    with open('C:\\Users\\Richard\\Desktop\\Python\\hotmail.txt', 'rb') as f:
+        email_list = f.read().split(',')
+
+    ML(data_dir,file_list[0],email_list[0],email_list[1])
