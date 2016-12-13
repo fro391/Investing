@@ -75,7 +75,7 @@ def ML (dir,file,emailAddress,password):
 
     D_New = {k: v for k, v in Output.items() if v>0}#remove negative price increase predictions
     msg += (str(len(D_New))+ '\n')
-    msg += (str(D_New)+'\n')
+    #msg += (str(D_New)+'\n')
     D_New = sorted(D_New, key=D_New.get, reverse=True) #sort from highest to smallest
     msg += (str(D_New) + '\n')
 
@@ -91,7 +91,7 @@ def ML (dir,file,emailAddress,password):
 
     D_New2 = {k: v for k, v in Output2.items() if v>0}#remove negative price increase predictions
     msg += (str(len(D_New2)) + '\n')
-    msg += (str(D_New2) + '\n')
+    #msg += (str(D_New2) + '\n')
     D_New2 = sorted(D_New2, key=D_New2.get, reverse=True) #sort from highest to smallest
     msg += (str(D_New2) + '\n')
 
