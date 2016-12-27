@@ -10,11 +10,9 @@ from sklearn.linear_model import LinearRegression, LogisticRegression, BayesianR
 from sklearn.ensemble import GradientBoostingRegressor, AdaBoostRegressor, RandomForestRegressor
 from sklearn.svm import LinearSVC
 from sklearn.tree import DecisionTreeRegressor, ExtraTreeRegressor
-from sklearn.neural_network import MLPRegressor
 import glob, os
 import cPickle as pk
 import datetime
-
 import smtplib
 from email.mime.text import MIMEText
 
