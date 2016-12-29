@@ -34,9 +34,9 @@ def ML (dir,file,emailAddress,password):
     X_train, X_test, y_train, y_test = cross_validation.train_test_split(X,y,test_size= 0.2)
 
     #Model 1 training
-    clf = BayesianRidge()
+    clf = AdaBoostRegressor()
     clf.fit(X_train, y_train.astype(int)) #change float lable to int
-    msg += 'Bayesian ridge score is: %s \n' % str(clf.score(X_test,y_test.astype(int))) #change float lable to int
+    msg += 'Ada boosting score is: %s \n' % str(clf.score(X_test,y_test.astype(int))) #change float lable to int
     clf.fit(X, y.astype(int)) #change float lable to int
     #save Model
     with open('stocksA.p','wb') as f:
