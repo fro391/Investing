@@ -24,6 +24,9 @@ def dataSlicing():
     #df for google news counts
     NDG = pd.read_csv('C:\Users\Richard\Desktop\Python\Investing\ArticleScrape\data\NewsDateGooG.csv')
 
+    #df for iChart stats
+    iChart = pd.read_csv('C:\Users\Richard\Desktop\Python\Investing\iChart\iChart'+strftime("%Y-%m-%d", gmtime())+'.csv')
+
     #merge file for google and yahoo news, maxed to remove duplicates
     GYNews = NDY.append(NDG).groupby('Ticker&Date').max()
     GYNews.to_csv('C:\Users\Richard\Desktop\Python\Investing\ArticleScrape\data\GoogYahooNewsCount.csv')
@@ -31,6 +34,10 @@ def dataSlicing():
     #looking up for news count on days of high volume
     YahooCount = VPN.merge(NDY, on = 'Ticker&Date', how = 'left')
     GoogleCount = VPN.merge(NDG, on = 'Ticker&Date', how = 'left')
+
+    #joining with iChart Data
+    YahooCount = YahooCount.merge(iChart, on = 'Ticker&Date', how = 'left')
+    GoogleCount = GoogleCount.merge(iChart, on = 'Ticker&Date', how = 'left')
 
     #take the date where the most number of news comes from either yahoo or google
     VPNout = YahooCount.append(GoogleCount).groupby('Ticker&Date').max()

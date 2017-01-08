@@ -5,6 +5,7 @@ import time
 import threading
 import timeit
 import pandas as pd
+from time import strftime,strptime,gmtime
 
 #start timer
 start = timeit.default_timer()
@@ -24,8 +25,11 @@ def getiChart (symbol):
        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
        'Connection': 'keep-alive'}
 
-    request = urllib2.Request(url,headers = hdr)
-    htmltext = urllib2.urlopen(request)
+    try:
+        request = urllib2.Request(url,headers = hdr)
+        htmltext = urllib2.urlopen(request)
+    except:
+        pass
 
     try:
         #dictionaries
@@ -71,7 +75,7 @@ def getiChart (symbol):
             # of divergence over close price
             divergencePercent = float(divergence)/float(close)
             #variable to be written to file. this will still process if thread is locked
-            toBeWritten = (str(symbol)+','+ str(BandWidth)+','+ str(BoilUpper)+','+str(close)+','+ str(BoilLower)+','+ str(BoilPercent)+','+str(divergence)+','+str(signal)+','+str(macd)+','+str(divergencePercent)+','+str(rsi)+','+str(sma60)+','+str(sma20)+','+str(sma5)+','+str(mfi)+','+str(stochK)+','+str(stochD)+','+str(lastTradeDate)+'\n')
+            toBeWritten = (str(symbol)+datetime.datetime.today().strftime('%Y%m%d')+','+ str(BandWidth)+','+ str(BoilUpper)+','+str(close)+','+ str(BoilLower)+','+ str(BoilPercent)+','+str(divergence)+','+str(signal)+','+str(macd)+','+str(divergencePercent)+','+str(rsi)+','+str(sma60)+','+str(sma20)+','+str(sma5)+','+str(mfi)+','+str(stochK)+','+str(stochD)+','+str(lastTradeDate)+'\n')
 
             lock.acquire()
             try:
@@ -92,12 +96,12 @@ symbolslist = symbolslistR.split('\n')
 threadlist = []
 
 #creating file in local directory
-myfile = open('iChart.csv', 'w+')
-myfile.write('Ticker, BandWidth, BoilUpper, close, BoilLower, BoilPercent,divergence,signal,macd,divergence%,rsi,sma60,sma20,sma5,mfi,stochK,stochD,lastTradeDate'+'\n')
+myfile = open('iChart'+strftime("%Y-%m-%d", gmtime())+'.csv', 'w+')
+myfile.write('Ticker&Date, BandWidth, BoilUpper, close, BoilLower, BoilPercent,divergence,signal,macd,divergence%,rsi,sma60,sma20,sma5,mfi,stochK,stochD,lastTradeDate'+'\n')
 myfile.close()
 
 #threading to append info into csv
-myfile = open('iChart.csv', 'a')
+myfile = open('iChart'+strftime("%Y-%m-%d", gmtime())+'.csv', 'a')
 
 for u in symbolslist:
 
