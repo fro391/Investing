@@ -34,6 +34,9 @@ def dataSlicing():
     #looking up for news count on days of high volume
     YahooCount = VPN.merge(NDY, on = 'Ticker&Date', how = 'left')
     GoogleCount = VPN.merge(NDG, on = 'Ticker&Date', how = 'left')
+    #if news count is zero, show zero instead of null
+    YahooCount.replace('NaN',0,inplace = True)
+    GoogleCount.replace('NaN',0,inplace = True)
 
     #joining with iChart Data
     YahooCount = YahooCount.merge(iChart, on = 'Ticker&Date', how = 'left')
@@ -41,6 +44,7 @@ def dataSlicing():
 
     #take the date where the most number of news comes from either yahoo or google
     VPNout = YahooCount.append(GoogleCount).groupby('Ticker&Date').max()
+
 
     #filtering out columns
     #VPNout = VPNout.ix[VPNout['EPS']>-2,['Ticker&Date','EPS','AvgV%','VF%','priceChange','50MA%','Title']]

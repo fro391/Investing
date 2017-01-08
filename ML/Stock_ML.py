@@ -57,7 +57,6 @@ def ML (dir,file,emailAddress,password):
     #New data
     df = pd.read_csv(dir + file)
     df = df.drop(df[df.EPS < 0].index) #removes stocks with EPS<0
-    df.replace('NaN',0,inplace = True)
 
     X_predict = np.array(df)
 
