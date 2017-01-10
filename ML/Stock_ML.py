@@ -127,7 +127,7 @@ if __name__ == '__main__':
             df_yes['Ticker&Date'] = df_yes['Ticker&Date'].map(lambda x: x.lstrip('+-').rstrip('0123456789'))
             learning_df =  df_yes.merge(df_today, on = 'Ticker&Date', how = 'left')
             learning_df['Ticker&Date'] = learning_df['Ticker&Date'] + file_list[i][-14:-4].replace('-','') #adding back timestamp
-            '''learning_df.set_index('Ticker&Date').to_csv(data_dir +'LearningFile.csv')''' #used to generate learning file if accidentally deleted
+            #learning_df.set_index('Ticker&Date').to_csv(data_dir +'LearningFile.csv') #used to generate learning file if accidentally deleted
             #appending learning file to master learning file
             VPNOutput = pd.read_csv(data_dir +'LearningFile.csv')
             outputF =  VPNOutput.append(learning_df).drop_duplicates().set_index('Ticker&Date')
