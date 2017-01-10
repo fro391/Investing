@@ -23,10 +23,11 @@ def ML (dir,file,emailAddress,password):
     df.replace('NaN',0,inplace = True)#Remove null
     df.replace('#N/A',0,inplace = True)#Remove null
     df.replace('inf',0,inplace=True)#Remove infinity
-    df.drop(['Ticker&Date'],1,inplace = True)
+    df.drop(['Ticker&Date','lastTradeDate'],1,inplace = True)#Remove uninformative features
 
     X = np.array(df.drop(['priceChange_y'],1))
     X = preprocessing.scale(X)
+    df['priceChange_x'] = df['priceChange_x'].map(lambda x: x * 100) #multiply float to make percentage
     df['priceChange_y'] = df['priceChange_y'].map(lambda x: x * 100) #multiply float to make percentage
     y = np.array(df['priceChange_y'])
     y = preprocessing.scale(y)
