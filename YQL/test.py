@@ -16,7 +16,7 @@ def dataSlicing():
     VPN['50MA%'] = (VPN['lastTrade']-VPN['50DayMA'])/VPN['50DayMA']
 
     #new df
-    VPN = VPN[['Ticker&Date','EPS','AvgV%','VF%','priceChange','50MA%']]
+    VPN = VPN[['Ticker&Date','EPS','AvgV%','VF%','priceChange','50MA%','float']]
 
     #df for yahoo news counts
     NDY = pd.read_csv('C:\Users\Richard\Desktop\Python\Investing\ArticleScrape\data\NewsDateHist.csv')
