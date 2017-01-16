@@ -25,6 +25,9 @@ def ML (dir,file,emailAddress,password):
     df.replace('inf',0,inplace=True)#Remove infinity
     df.drop(['Ticker&Date'],1,inplace = True)#Remove uninformative features
     df.drop(['lastTradeDate'],1)#Remove uninformative features
+    df.drop([' BoilLower'],1)#Remove uninformative features
+    df.drop([' BoilUpper'],1)#Remove uninformative features
+    df.drop(['divergence%'],1)#Remove uninformative features
 
     X = np.array(df.drop(['priceChange_y'],1))
     X = preprocessing.scale(X)
@@ -93,7 +96,9 @@ def ML (dir,file,emailAddress,password):
     #msg += (str(D_New2) + '\n')
     D_New2 = sorted(D_New2, key=D_New2.get, reverse=True) #sort from highest to smallest
     msg += (str(D_New2) + '\n')
+    print msg
 
+    '''
     #send results to email
     msg = MIMEText(msg)
     msg ['Subject'] = '%s stock analysis' % str(datetime.datetime.today().strftime('%Y-%m-%d'))
@@ -109,7 +114,7 @@ def ML (dir,file,emailAddress,password):
         s.quit()
         print 'email sent to: %s' %emailAddress
     except:
-        raise
+        raise'''
 
 if __name__ == '__main__':
 
