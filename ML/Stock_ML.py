@@ -98,7 +98,6 @@ def ML (dir,file,emailAddress,password):
     msg += (str(D_New2) + '\n')
     print msg
 
-    '''
     #send results to email
     msg = MIMEText(msg)
     msg ['Subject'] = '%s stock analysis' % str(datetime.datetime.today().strftime('%Y-%m-%d'))
@@ -114,7 +113,7 @@ def ML (dir,file,emailAddress,password):
         s.quit()
         print 'email sent to: %s' %emailAddress
     except:
-        raise'''
+        raise
 
 if __name__ == '__main__':
 
