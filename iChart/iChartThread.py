@@ -96,12 +96,12 @@ symbolslist = symbolslistR.split('\n')
 threadlist = []
 
 #creating file in local directory
-myfile = open('iChart'+strftime("%Y-%m-%d", gmtime())+'.csv', 'w+')
+myfile = open('iChart.csv', 'w+')
 myfile.write('Ticker&Date, BandWidth, BoilUpper, close, BoilLower, BoilPercent,divergence,signal,macd,divergence%,rsi,sma60,sma20,sma5,mfi,stochK,stochD,lastTradeDate'+'\n')
 myfile.close()
 
 #threading to append info into csv
-myfile = open('iChart'+strftime("%Y-%m-%d", gmtime())+'.csv', 'a')
+myfile = open('iChart.csv', 'a')
 
 for u in symbolslist:
 

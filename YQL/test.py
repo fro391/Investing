@@ -25,7 +25,7 @@ def dataSlicing():
     NDG = pd.read_csv('C:\Users\Richard\Desktop\Python\Investing\ArticleScrape\data\NewsDateGooG.csv')
 
     #df for iChart stats
-    iChart = pd.read_csv('C:\Users\Richard\Desktop\Python\Investing\iChart\iChart'+strftime("%Y-%m-%d", gmtime())+'.csv')
+    iChart = pd.read_csv('C:\Users\Richard\Desktop\Python\Investing\iChart\iChart.csv')
 
     #merge file for google and yahoo news, maxed to remove duplicates
     GYNews = NDY.append(NDG).groupby('Ticker&Date').max()
