@@ -23,6 +23,10 @@ def ML (dir,file,emailAddress,password):
     df.replace('NaN',0,inplace = True)#Remove null
     df.replace('#N/A',0,inplace = True)#Remove null
     df.replace('inf',0,inplace=True)#Remove infinity
+
+    df = df[~df['Ticker&Date'].str.contains('.TO')] #remove Canadian stocks
+    df = df[~df['Ticker&Date'].str.contains('.V')] #remove Canadian stocks
+
     df.drop(['Ticker&Date'],1,inplace = True)#Remove uninformative features
     df.drop(['lastTradeDate'],1)#Remove uninformative features
     df.drop([' BoilLower'],1)#Remove uninformative features
@@ -97,6 +101,7 @@ def ML (dir,file,emailAddress,password):
     D_New2 = sorted(D_New2, key=D_New2.get, reverse=True) #sort from highest to smallest
     msg += (str(D_New2) + '\n')
     print msg
+
 
     #send results to email
     msg = MIMEText(msg)
