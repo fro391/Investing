@@ -4,16 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/YQL/test.py" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e008c9f-b445-4c9e-ae93-2d58f876c7bc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ArticleScrape/data/GoogYahooNewsCount.csv" afterPath="$PROJECT_DIR$/ArticleScrape/data/GoogYahooNewsCount.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ArticleScrape/data/KeyWords.csv" afterPath="$PROJECT_DIR$/ArticleScrape/data/KeyWords.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ArticleScrape/data/NewsDate.csv" afterPath="$PROJECT_DIR$/ArticleScrape/data/NewsDate.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ArticleScrape/data/NewsDateG.csv" afterPath="$PROJECT_DIR$/ArticleScrape/data/NewsDateG.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ArticleScrape/data/NewsDateGooG.csv" afterPath="$PROJECT_DIR$/ArticleScrape/data/NewsDateGooG.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ArticleScrape/data/NewsDateHist.csv" afterPath="$PROJECT_DIR$/ArticleScrape/data/NewsDateHist.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ML/Stock_ML.py" afterPath="$PROJECT_DIR$/ML/Stock_ML.py" />
-    </list>
+    <list default="true" id="6e008c9f-b445-4c9e-ae93-2d58f876c7bc" name="Default" comment="" />
     <ignored path="Investing.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,8 +37,8 @@
       <file leaf-file-name="Stock_ML.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ML/Stock_ML.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.81962866">
-              <caret line="89" column="23" selection-start-line="89" selection-start-column="23" selection-end-line="89" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.8647215">
+              <caret line="90" column="12" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -1018,8 +1009,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ML/Stock_ML.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.81962866">
-          <caret line="89" column="23" selection-start-line="89" selection-start-column="23" selection-end-line="89" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.8647215">
+          <caret line="90" column="12" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="12" />
           <folding />
         </state>
       </provider>
