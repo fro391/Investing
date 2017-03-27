@@ -79,7 +79,7 @@ def ML (dir,file,emailAddress,password):
         except:
             pass
 
-    D_New = {k: v for k, v in Output.items() if v>-1}#remove above -1 price increase predictions
+    D_New = {k: v for k, v in Output.items() if v>0}#remove above -1 price increase predictions
     msg += (str(len(D_New))+ '\n')
     #msg += (str(D_New)+'\n')
     D_New = sorted(D_New, key=D_New.get, reverse=True) #sort from highest to smallest

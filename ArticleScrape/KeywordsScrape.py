@@ -229,4 +229,3 @@ if __name__ == '__main__':
     print '# of threads: ' + str(len(threadlist))
     stop = timeit.default_timer()
     print stop - start
-
