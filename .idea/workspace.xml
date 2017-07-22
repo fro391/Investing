@@ -4,152 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/YQL/test.py" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e008c9f-b445-4c9e-ae93-2d58f876c7bc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/keystats_Industry2015-04-05.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/keystats_Industry2015-04-06.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/LearningFile.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ArticleScrape/Econ_Word_Scrape.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ML/breast_cancer_feature.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/HistRaw.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/KeyStats.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/NewsDate.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPN.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-10-24.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-10-25.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-10-26.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-10-27.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-10-29.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-11-01.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-11-05.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-11-09.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-11-18.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-11-19.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-11-23.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-11-25.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-11-26.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-11-30.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-12-03.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-12-06.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-12-07.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-12-08.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-12-10.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-12-15.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-12-16.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-12-17.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-12-20.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-12-21.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-12-22.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-12-23.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-12-24.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-12-31.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-01-04.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-01-05.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-01-06.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-01-07.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-01-13.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-01-14.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-01-18.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-01-19.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-01-20.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-01-21.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-01-24.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-01-26.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-01-27.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-02-08.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-02-09.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-02-10.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-02-11.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-02-14.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-02-15.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-02-16.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-02-17.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-02-18.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/keystats2015-07-17.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/keystats2015-08-24.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/keystats2015-10-02.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/keystats2015-10-18.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/keystats2015-10-28.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/keystats2015-11-03.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/keystats2015-11-20.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/keystats2015-11-22.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/keystats2015-12-24.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/keystats2016-02-22.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPN.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-02-22.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-02-24.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-02-25.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-02-28.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-01.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-02.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-04.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-08.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-10.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-11.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-14.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-15.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-16.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-17.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-21.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-22.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-23.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-24.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-25.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-28.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-29.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-30.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-31.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-04-04.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-04-05.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-04-06.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-04-07.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-04-10.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-04-12.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-04-15.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-04-18.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-04-19.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-04-20.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-04-21.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-04-22.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-04-25.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-04-26.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-04-27.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-04-28.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-04-29.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-05-02.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-05-03.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-05-04.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-05-05.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-05-06.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-05-09.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-05-10.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-05-11.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-05-14.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-05-16.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-05-17.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-05-19.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-05-23.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-05-25.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-05-26.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-05-27.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-05-29.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-05-31.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-06-02.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-06-07.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-06-13.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-06-21.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-06-22.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-06-30.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-07-01.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-07-15.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-07-17.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-07-21.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/stocksA.p" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/stocksB.p" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/iChart/iChart.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ArticleScrape/GooGNewsDate.py" afterPath="$PROJECT_DIR$/ArticleScrape/GooGNewsDate.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ArticleScrape/NewsDate.py" afterPath="$PROJECT_DIR$/ArticleScrape/NewsDate.py" />
-    </list>
+    <list default="true" id="6e008c9f-b445-4c9e-ae93-2d58f876c7bc" name="Default" comment="" />
     <ignored path="Investing.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -169,6 +24,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Econ_Word_Scrape.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ArticleScrape/Econ_Word_Scrape.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="KeywordsScrape.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ArticleScrape/KeywordsScrape.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -223,11 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewsDate.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NewsDate.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ArticleScrape/NewsDate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7293729">
-              <caret line="34" column="67" selection-start-line="34" selection-start-column="67" selection-end-line="34" selection-end-column="67" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -793,13 +660,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ML/clustering.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ML/Stock_ML.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1159,9 +1019,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ArticleScrape/NewsDate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7293729">
-          <caret line="34" column="67" selection-start-line="34" selection-start-column="67" selection-end-line="34" selection-end-column="67" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArticleScrape/Econ_Word_Scrape.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
