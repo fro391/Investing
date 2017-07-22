@@ -32,7 +32,7 @@ def NewsDate (symbol):
                 c += 1
                 ArticleTitle = titles[c].encode('ascii','ignore').replace(',','')
                 #accounting for time zones
-                utc = datetime.strptime(i,'%a, %d %b %Y %H:%M:%S %Z')
+                utc = datetime.strptime(i,'%a, %d %b %Y %H:%M:%S %z')
                 local = utc + timedelta(hours=-5)
                 #converts yahoo's timestamp to YearMonthDate
                 j = strftime("%Y%m%d",strptime(str(local),"%Y-%m-%d %H:%M:%S"))

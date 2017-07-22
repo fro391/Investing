@@ -5,14 +5,150 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e008c9f-b445-4c9e-ae93-2d58f876c7bc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ArticleScrape/data/GoogYahooNewsCount.csv" afterPath="$PROJECT_DIR$/ArticleScrape/data/GoogYahooNewsCount.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/keystats_Industry2015-04-05.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/keystats_Industry2015-04-06.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/LearningFile.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ArticleScrape/Econ_Word_Scrape.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ML/breast_cancer_feature.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/HistRaw.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/KeyStats.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/NewsDate.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPN.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-10-24.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-10-25.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-10-26.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-10-27.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-10-29.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-11-01.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-11-05.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-11-09.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-11-18.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-11-19.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-11-23.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-11-25.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-11-26.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-11-30.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-12-03.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-12-06.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-12-07.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-12-08.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-12-10.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-12-15.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-12-16.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-12-17.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-12-20.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-12-21.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-12-22.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-12-23.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-12-24.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2016-12-31.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-01-04.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-01-05.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-01-06.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-01-07.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-01-13.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-01-14.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-01-18.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-01-19.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-01-20.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-01-21.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-01-24.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-01-26.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-01-27.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-02-08.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-02-09.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-02-10.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-02-11.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-02-14.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-02-15.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-02-16.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-02-17.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/VPNoutput2017-02-18.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/keystats2015-07-17.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/keystats2015-08-24.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/keystats2015-10-02.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/keystats2015-10-18.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/keystats2015-10-28.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/keystats2015-11-03.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/keystats2015-11-20.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/keystats2015-11-22.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/keystats2015-12-24.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/Archive/keystats2016-02-22.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPN.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-02-22.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-02-24.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-02-25.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-02-28.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-01.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-02.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-04.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-08.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-10.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-11.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-14.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-15.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-16.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-17.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-21.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-22.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-23.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-24.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-25.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-28.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-29.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-30.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-03-31.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-04-04.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-04-05.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-04-06.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-04-07.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-04-10.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-04-12.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-04-15.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-04-18.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-04-19.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-04-20.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-04-21.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-04-22.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-04-25.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-04-26.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-04-27.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-04-28.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-04-29.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-05-02.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-05-03.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-05-04.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-05-05.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-05-06.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-05-09.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-05-10.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-05-11.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-05-14.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-05-16.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-05-17.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-05-19.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-05-23.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-05-25.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-05-26.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-05-27.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-05-29.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-05-31.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-06-02.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-06-07.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-06-13.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-06-21.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-06-22.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-06-30.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-07-01.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-07-15.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-07-17.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/VPNoutput2017-07-21.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/stocksA.p" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YQL/data/stocksB.p" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/iChart/iChart.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ArticleScrape/KeywordsScrape.py" afterPath="$PROJECT_DIR$/ArticleScrape/KeywordsScrape.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ArticleScrape/data/NewsDate.csv" afterPath="$PROJECT_DIR$/ArticleScrape/data/NewsDate.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ArticleScrape/data/NewsDateG.csv" afterPath="$PROJECT_DIR$/ArticleScrape/data/NewsDateG.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ArticleScrape/data/NewsDateGooG.csv" afterPath="$PROJECT_DIR$/ArticleScrape/data/NewsDateGooG.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ArticleScrape/data/NewsDateHist.csv" afterPath="$PROJECT_DIR$/ArticleScrape/data/NewsDateHist.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ML/Stock_ML.py" afterPath="$PROJECT_DIR$/ML/Stock_ML.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ArticleScrape/GooGNewsDate.py" afterPath="$PROJECT_DIR$/ArticleScrape/GooGNewsDate.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ArticleScrape/NewsDate.py" afterPath="$PROJECT_DIR$/ArticleScrape/NewsDate.py" />
     </list>
     <ignored path="Investing.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,11 +169,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="KeywordsScrape.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="KeywordsScrape.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ArticleScrape/KeywordsScrape.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5510563">
-              <caret line="221" column="31" selection-start-line="221" selection-start-column="31" selection-end-line="221" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="209" column="0" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
               <folding>
                 <element signature="e#187#196#0" expanded="true" />
               </folding>
@@ -49,7 +185,7 @@
         <entry file="file://$PROJECT_DIR$/ML/Stock_ML.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+              <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -81,17 +217,17 @@
         <entry file="file://$PROJECT_DIR$/ArticleScrape/GooGNewsDate.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+              <caret line="41" column="67" selection-start-line="41" selection-start-column="67" selection-end-line="41" selection-end-column="67" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewsDate.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="NewsDate.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ArticleScrape/NewsDate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="84" column="50" selection-start-line="84" selection-start-column="50" selection-end-line="84" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.7293729">
+              <caret line="34" column="67" selection-start-line="34" selection-start-column="67" selection-end-line="34" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -159,20 +295,21 @@
         <option value="$PROJECT_DIR$/ML/ML_1.py" />
         <option value="$PROJECT_DIR$/ML/ML_2.py" />
         <option value="$PROJECT_DIR$/ML/ML_3.py" />
-        <option value="$PROJECT_DIR$/ArticleScrape/GooGNewsDate.py" />
-        <option value="$PROJECT_DIR$/ArticleScrape/NewsDate.py" />
         <option value="$PROJECT_DIR$/ML/clustering.py" />
         <option value="$PROJECT_DIR$/YQL/test.py" />
         <option value="$PROJECT_DIR$/iChart/iChartThread.py" />
         <option value="$PROJECT_DIR$/ML/Stock_ML.py" />
         <option value="$PROJECT_DIR$/ArticleScrape/KeywordsScrape.py" />
+        <option value="$PROJECT_DIR$/ArticleScrape/GooGNewsDate.py" />
+        <option value="$PROJECT_DIR$/ArticleScrape/NewsDate.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="width" value="1370" />
-    <option name="height" value="735" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -199,16 +336,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -252,6 +379,16 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -614,28 +751,28 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16248153" sideWeight="0.48918918" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16178624" sideWeight="0.48918918" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30990416" sideWeight="0.5088626" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1136" sideWeight="0.4911374" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25256222" sideWeight="0.5108108" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3984" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1136" sideWeight="0.4911374" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3984" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -977,22 +1114,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ArticleScrape/NewsDate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="84" column="50" selection-start-line="84" selection-start-column="50" selection-end-line="84" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ArticleScrape/GooGNewsDate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/YQL/VFN_Analyzer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1013,18 +1134,34 @@
     <entry file="file://$PROJECT_DIR$/ML/Stock_ML.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ArticleScrape/KeywordsScrape.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5510563">
-          <caret line="221" column="31" selection-start-line="221" selection-start-column="31" selection-end-line="221" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="209" column="0" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
           <folding>
             <element signature="e#187#196#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArticleScrape/GooGNewsDate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="67" selection-start-line="41" selection-start-column="67" selection-end-line="41" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArticleScrape/NewsDate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7293729">
+          <caret line="34" column="67" selection-start-line="34" selection-start-column="67" selection-end-line="34" selection-end-column="67" />
+          <folding />
         </state>
       </provider>
     </entry>
