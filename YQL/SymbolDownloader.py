@@ -3,7 +3,7 @@ import json
 #first run YahooTickerDownloader.py stocks to get new symbols
 
 #old symbols list
-with open('symbols.txt','wb') as symbolfile:
+with open('symbols.txt','r') as symbolfile:
     symbolslistR = symbolfile.read()
     symbolslist = symbolslistR.split('\n')
 len1 = len(symbolslist)
