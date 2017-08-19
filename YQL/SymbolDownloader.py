@@ -3,16 +3,15 @@ import json
 #first run YahooTickerDownloader.py stocks to get new symbols
 
 #old symbols list
-symbolfile = open("symbols.txt")
-symbolslistR = symbolfile.read()
-symbolslist = symbolslistR.split('\n')
-symbolfile.close()
+with open('symbols.txt','wb') as symbolfile:
+    symbolslistR = symbolfile.read()
+    symbolslist = symbolslistR.split('\n')
 len1 = len(symbolslist)
 
 scrappedSymbol = []
 
 #extracting north american stocks
-with open('C:\Python27\Scripts\Stock.json') as data_file:
+with open('C:\Users\Richard\Anaconda2\Scripts\Stock.json') as data_file:
     scrapefile = json.load(data_file)
 for i in scrapefile:
     if '.' not in i['Ticker'] and i['Exchange']!= 'OBB'and i['Exchange']!= 'PNK'and i['Exchange']!= 'TOR'and i['Exchange']!= 'BTS'and i['Exchange']!= 'VAN':
