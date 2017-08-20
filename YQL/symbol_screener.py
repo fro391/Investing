@@ -42,9 +42,9 @@ for i in symbolslist:
     t.start()
     threadlist.append(t)
     #sets top limit of active threads to 100
-    while threading.activeCount()>10:
+    while threading.activeCount()>50:
         a=0
-    print threading.activeCount()
+    #print threading.activeCount()
 #finishes threads before closing file
 for b in threadlist:
     b.join()
