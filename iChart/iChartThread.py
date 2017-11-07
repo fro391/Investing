@@ -76,7 +76,7 @@ def getiChart (symbol):
         opn = quote['open'][-1]
         high = quote['high'][-1]
         low= quote['low'][-1]
-        pChange = close - opn
+        pChange = (close - opn)/float(opn)
 
         vol = quote['volume'][-1]
         #Vol as percentage of avg 20 days vol
@@ -133,7 +133,7 @@ threadlist = []
 
 #creating file in local directory
 with open('iChart'+strftime("%Y-%m-%d", gmtime())+'.csv', 'w+') as myfile:
-    myfile.write('Ticker&Date, BandWidth, BoilUpper, close, open, high, low, pChg, vol%, p50%, BoilLower, BoilPercent,divergence,signal,macd,divergence%,rsi,sma50,sma20,sma5,mfi,stochK,stochD,lastTradeDate'+'\n')
+    myfile.write('Ticker&Date, BandWidth, BoilUpper, close, open, high, low, pChg%, vol%, p50%, BoilLower, BoilPercent,divergence,signal,macd,divergence%,rsi,sma50,sma20,sma5,mfi,stochK,stochD,lastTradeDate'+'\n')
 
 #threading to append info into csv
 with open('iChart'+strftime("%Y-%m-%d", gmtime())+'.csv', 'a') as myfile:
