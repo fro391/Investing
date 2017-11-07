@@ -19,7 +19,7 @@ def getiChart (symbol):
     dt = datetime.datetime.now()
     UnixTime = int(time.mktime(dt.timetuple()))
     #https://finance-yql.media.yahoo.com/v7/finance/chart/KING?period2=1430672173&period1=1378832173&interval=1d&indicators=quote%7Cbollinger~20-2%7Csma~50%7Csma~50%7Csma~50%7Cmfi~14%7Cmacd~26-12-9%7Crsi~14%7Cstoch~14-1-3&includeTimestamps=true&includePrePost=false&events=div%7Csplit%7Cearn&corsDomain=finance.yahoo.com
-    url='https://finance-yql.media.yahoo.com/v7/finance/chart/'+symbol+'?period2='+str(UnixTime)+'&period1='+str(UnixTime-86400*4)+'&interval=1d&indicators=quote%7Cbollinger~20-2%7Csma~60%7Csma~20%7Csma~5%7Cmfi~14%7Cmacd~26-12-9%7Crsi~14%7Cstoch~14-1-3&includeTimestamps=true&includePrePost=false&events=div%7Csplit%7Cearn&corsDomain=finance.yahoo.com'
+    url='https://finance-yql.media.yahoo.com/v7/finance/chart/'+symbol+'?period2='+str(UnixTime)+'&period1='+str(UnixTime-86400*4)+'&interval=1d&indicators=quote%7Cbollinger~20-2%7Csma~50%7Csma~20%7Csma~5%7Cmfi~14%7Cmacd~26-12-9%7Crsi~14%7Cstoch~14-1-3&includeTimestamps=true&includePrePost=false&events=div%7Csplit%7Cearn&corsDomain=finance.yahoo.com'
     #use legitimate header so bot won't pick up
     hdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36',
        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
@@ -38,7 +38,7 @@ def getiChart (symbol):
         boillinger = data['chart']['result'][0]['indicators']['bollinger'][0]
         MACD = data['chart']['result'][0]['indicators']['macd'][0]
         RSI = data['chart']['result'][0]['indicators']['rsi'][0]
-        SMA60 = data['chart']['result'][0]['indicators']['sma'][0]
+        SMA50 = data['chart']['result'][0]['indicators']['sma'][0]
         SMA20 = data['chart']['result'][0]['indicators']['sma'][1]
         SMA5 = data['chart']['result'][0]['indicators']['sma'][2]
         MFI = data['chart']['result'][0]['indicators']['mfi'][0]
@@ -60,7 +60,7 @@ def getiChart (symbol):
         #RSI data
         rsi = RSI['rsi'][-1]
         #SMA data
-        sma60 = SMA60['sma'][-1]
+        sma50 = SMA50['sma'][-1]
         sma20 = SMA20['sma'][-1]
         sma5 = SMA5['sma'][-1]
         #MFI data
@@ -75,7 +75,7 @@ def getiChart (symbol):
             # of divergence over close price
             divergencePercent = float(divergence)/float(close)
             #variable to be written to file. this will still process if thread is locked
-            toBeWritten = (str(symbol)+datetime.datetime.today().strftime('%Y%m%d')+','+ str(BandWidth)+','+ str(BoilUpper)+','+str(close)+','+ str(BoilLower)+','+ str(BoilPercent)+','+str(divergence)+','+str(signal)+','+str(macd)+','+str(divergencePercent)+','+str(rsi)+','+str(sma60)+','+str(sma20)+','+str(sma5)+','+str(mfi)+','+str(stochK)+','+str(stochD)+','+str(lastTradeDate)+'\n')
+            toBeWritten = (str(symbol)+datetime.datetime.today().strftime('%Y%m%d')+','+ str(BandWidth)+','+ str(BoilUpper)+','+str(close)+','+ str(BoilLower)+','+ str(BoilPercent)+','+str(divergence)+','+str(signal)+','+str(macd)+','+str(divergencePercent)+','+str(rsi)+','+str(sma50)+','+str(sma20)+','+str(sma5)+','+str(mfi)+','+str(stochK)+','+str(stochD)+','+str(lastTradeDate)+'\n')
 
             lock.acquire()
             try:
@@ -96,27 +96,24 @@ symbolslist = symbolslistR.split('\n')
 threadlist = []
 
 #creating file in local directory
-myfile = open('iChart.csv', 'w+')
-myfile.write('Ticker&Date, BandWidth, BoilUpper, close, BoilLower, BoilPercent,divergence,signal,macd,divergence%,rsi,sma60,sma20,sma5,mfi,stochK,stochD,lastTradeDate'+'\n')
-myfile.close()
+with open('iChart'+strftime("%Y-%m-%d", gmtime())+'.csv', 'w+') as myfile:
+    myfile.write('Ticker&Date, BandWidth, BoilUpper, close, BoilLower, BoilPercent,divergence,signal,macd,divergence%,rsi,sma50,sma20,sma5,mfi,stochK,stochD,lastTradeDate'+'\n')
 
 #threading to append info into csv
-myfile = open('iChart.csv', 'a')
+with open('iChart'+strftime("%Y-%m-%d", gmtime())+'.csv', 'a') as myfile:
+    for u in symbolslist:
 
-for u in symbolslist:
+        t = threading.Thread(target = getiChart,args=(u,))
+        t.start()
+        threadlist.append(t)
+        #sets top limit of active threads to 50
+        while threading.activeCount()>50:
+            a=0
+        #print threading.activeCount()
 
-    t = threading.Thread(target = getiChart,args=(u,))
-    t.start()
-    threadlist.append(t)
-    #sets top limit of active threads to 50
-    while threading.activeCount()>50:
-        a=0
-    #print threading.activeCount()
-
-for b in threadlist:
-    b.join()
-print "# of threads: ", len(threadlist)
-myfile.close()
+    for b in threadlist:
+        b.join()
+    print "# of threads: ", len(threadlist)
 
 #timer
 stop = timeit.default_timer()

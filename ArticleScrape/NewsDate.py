@@ -73,7 +73,7 @@ if __name__ == '__main__':
             t.start()
             threadlist.append(t)
             #sets top limit of active threads to 10
-            while threading.activeCount()>10:
+            while threading.activeCount()>50:
                 a=0
             #print threading.activeCount()
         #finishes threads before closing file

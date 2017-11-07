@@ -3,7 +3,7 @@ from chunks import chunks
 import threading
 import timeit
 from test import dataSlicing
-
+#Doesn't work as of 2017-11-01
 #establishing lock variable
 global lock
 lock = threading.Lock()
