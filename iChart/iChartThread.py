@@ -70,6 +70,10 @@ def getiChart (symbol):
         sma50 = SMA50['sma'][-1]
         sma20 = SMA20['sma'][-1]
         sma5 = SMA5['sma'][-1]
+
+        #Avg price as percentage of sma50
+        sma50pct = ((close + opn + high + low)/4) / float(sma50)
+
         #MFI data
         mfi = MFI['mfi'][-1]
         #STOCH
@@ -82,7 +86,7 @@ def getiChart (symbol):
             # of divergence over close price
             divergencePercent = float(divergence)/float(close)
             #variable to be written to file. this will still process if thread is locked
-            toBeWritten = (str(symbol)+datetime.datetime.today().strftime('%Y%m%d')+','+ str(BandWidth)+','+ str(BoilUpper)+','+str(close)+','+str(opn)+','+str(high)+','+str(low)+','+str(avgV20Pct)+','+ str(BoilLower)+','+ str(BoilPercent)+','+str(divergence)+','+str(signal)+','+str(macd)+','+str(divergencePercent)+','+str(rsi)+','+str(sma50)+','+str(sma20)+','+str(sma5)+','+str(mfi)+','+str(stochK)+','+str(stochD)+','+str(lastTradeDate)+'\n')
+            toBeWritten = (str(symbol)+datetime.datetime.today().strftime('%Y%m%d')+','+ str(BandWidth)+','+ str(BoilUpper)+','+str(close)+','+str(opn)+','+str(high)+','+str(low)+','+str(avgV20Pct)+','+str(sma50pct)+','+ str(BoilLower)+','+ str(BoilPercent)+','+str(divergence)+','+str(signal)+','+str(macd)+','+str(divergencePercent)+','+str(rsi)+','+str(sma50)+','+str(sma20)+','+str(sma5)+','+str(mfi)+','+str(stochK)+','+str(stochD)+','+str(lastTradeDate)+'\n')
 
             lock.acquire()
             try:
@@ -103,7 +107,7 @@ threadlist = []
 
 #creating file in local directory
 with open('iChart'+strftime("%Y-%m-%d", gmtime())+'.csv', 'w+') as myfile:
-    myfile.write('Ticker&Date, BandWidth, BoilUpper, close, open, high, low, vol%, BoilLower, BoilPercent,divergence,signal,macd,divergence%,rsi,sma50,sma20,sma5,mfi,stochK,stochD,lastTradeDate'+'\n')
+    myfile.write('Ticker&Date, BandWidth, BoilUpper, close, open, high, low, vol%, p50%, BoilLower, BoilPercent,divergence,signal,macd,divergence%,rsi,sma50,sma20,sma5,mfi,stochK,stochD,lastTradeDate'+'\n')
 
 #threading to append info into csv
 with open('iChart'+strftime("%Y-%m-%d", gmtime())+'.csv', 'a') as myfile:
