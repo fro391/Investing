@@ -6,6 +6,31 @@ import threading
 import timeit
 import pandas as pd
 from time import strftime,strptime,gmtime
+from email.mime.text import MIMEText
+import smtplib
+
+'''#get email
+with open('C:\\Users\\Richard\\Desktop\\Python\\hotmail.txt', 'rb') as f:
+    email_list = f.read().split(',')
+emailAddress = email_list[0]
+password = email_list[1]
+
+# send results to email
+msg = MIMEText('Stock Analysis')
+msg['Subject'] = '%s stock analysis' % str(datetime.datetime.today().strftime('%Y-%m-%d'))
+msg['From'] = emailAddress
+msg['To'] = emailAddress
+try:
+    s = smtplib.SMTP('smtp-mail.outlook.com', 25)
+    s.ehlo()  # Hostname to send for this command defaults to the fully qualified domain name of the local host.
+    s.starttls()  # Puts connection to SMTP server in TLS mode
+    s.ehlo()
+    s.login(emailAddress, password)
+    s.sendmail(emailAddress, emailAddress, msg.as_string())
+    s.quit()
+    print 'email sent to: %s' % emailAddress
+except:
+    raise'''
 
 #start timer
 start = timeit.default_timer()
@@ -99,7 +124,7 @@ def getiChart (symbol):
         message = template.format(type(ex).__name__, ex.args)
         print message, symbol
 
-symbolfile = open("symbolsAlt.txt")
+symbolfile = open("symbols.txt")
 symbolslistR = symbolfile.read()
 symbolslist = symbolslistR.split('\n')
 
