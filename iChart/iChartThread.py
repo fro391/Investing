@@ -112,7 +112,7 @@ def getiChart (symbol):
             # of divergence over close price
             divergencePercent = float(divergence)/float(close)
             #variable to be written to file. this will still process if thread is locked
-            toBeWritten = (str(symbol)+datetime.datetime.today().strftime('%Y%m%d')+','+ str(BandWidth)+','+ str(BoilUpper)+','+str(close)+','+str(opn)+','+str(high)+','+str(low)+','+str(pChange)+','+str(avgV20Pct)+str(vol)+','+str(sma50pct)+','+ str(BoilLower)+','+ str(BoilPercent)+','+str(divergence)+','+str(signal)+','+str(macd)+','+str(divergencePercent)+','+str(rsi)+','+str(sma50)+','+str(sma20)+','+str(sma5)+','+str(mfi)+','+str(stochK)+','+str(stochD)+','+str(lastTradeDate)+'\n')
+            toBeWritten = (str(symbol)+datetime.datetime.today().strftime('%Y%m%d')+','+ str(BandWidth)+','+ str(BoilUpper)+','+str(close)+','+str(opn)+','+str(high)+','+str(low)+','+str(pChange)+','+str(avgV20Pct)+','+str(int(vol))+','+str(sma50pct)+','+ str(BoilLower)+','+ str(BoilPercent)+','+str(divergence)+','+str(signal)+','+str(macd)+','+str(divergencePercent)+','+str(rsi)+','+str(sma50)+','+str(sma20)+','+str(sma5)+','+str(mfi)+','+str(stochK)+','+str(stochD)+','+str(lastTradeDate)+'\n')
 
             lock.acquire()
             try:
