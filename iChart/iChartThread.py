@@ -6,31 +6,9 @@ import threading
 import timeit
 import pandas as pd
 from time import strftime,strptime,gmtime
-from email.mime.text import MIMEText
+import datetime
 import smtplib
-
-'''#get email
-with open('C:\\Users\\Richard\\Desktop\\Python\\hotmail.txt', 'rb') as f:
-    email_list = f.read().split(',')
-emailAddress = email_list[0]
-password = email_list[1]
-
-# send results to email
-msg = MIMEText('Stock Analysis')
-msg['Subject'] = '%s stock analysis' % str(datetime.datetime.today().strftime('%Y-%m-%d'))
-msg['From'] = emailAddress
-msg['To'] = emailAddress
-try:
-    s = smtplib.SMTP('smtp-mail.outlook.com', 25)
-    s.ehlo()  # Hostname to send for this command defaults to the fully qualified domain name of the local host.
-    s.starttls()  # Puts connection to SMTP server in TLS mode
-    s.ehlo()
-    s.login(emailAddress, password)
-    s.sendmail(emailAddress, emailAddress, msg.as_string())
-    s.quit()
-    print 'email sent to: %s' % emailAddress
-except:
-    raise'''
+from email.mime.text import MIMEText
 
 #start timer
 start = timeit.default_timer()
@@ -150,6 +128,38 @@ with open('iChart'+strftime("%Y-%m-%d", gmtime())+'.csv', 'a') as myfile:
     for b in threadlist:
         b.join()
     print "# of threads: ", len(threadlist)
+
+#filtering and sorting
+iChart = pd.read_csv('iChart'+strftime("%Y-%m-%d", gmtime())+'.csv').dropna()
+iChart = iChart.ix[iChart[' p50%']>= 0.8,['Ticker&Date',' vol%', ' vol', ' pChg%',' close',' p50%']]
+iChart = iChart.ix[iChart[' vol']>= 2000000 ,['Ticker&Date',' vol%', ' vol', ' pChg%',' close',' p50%']]
+iChart = iChart.ix[iChart[' pChg%']> 0 ,['Ticker&Date',' vol%', ' vol', ' pChg%',' close',' p50%']]
+iChart = iChart.ix[iChart[' close']>= 2 ,['Ticker&Date',' vol%', ' vol', ' pChg%',' close',' p50%']]
+iChart = iChart.ix[iChart[' close']<= 20 ,['Ticker&Date', ' vol%', ' vol', ' pChg%',' close',' p50%']]
+iChart = iChart.ix[iChart[' vol%']>= 2 ,['Ticker&Date', ' vol%', ' vol', ' pChg%',' close',' p50%']]
+iChart = iChart.sort_values (' vol%', ascending=0)
+
+#email output
+with open('C:\\Users\\Richard\\Desktop\\Python\\hotmail.txt', 'rb') as f:
+    email_list = f.read().split(',')
+emailAddress = email_list[0]
+password = email_list[1]
+
+msg = MIMEText(str(iChart))
+msg['Subject'] = '%s stock analysis: potentials - %s' % (str(datetime.datetime.today().strftime('%Y-%m-%d')), str(len(iChart)))
+msg['From'] = emailAddress
+msg['To'] = emailAddress
+try:
+    s = smtplib.SMTP('smtp-mail.outlook.com', 25)
+    s.ehlo()  # Hostname to send for this command defaults to the fully qualified domain name of the local host.
+    s.starttls()  # Puts connection to SMTP server in TLS mode
+    s.ehlo()
+    s.login(emailAddress, password)
+    s.sendmail(emailAddress, emailAddress, msg.as_string())
+    s.quit()
+    print 'email sent to: %s' % emailAddress
+except:
+    raise
 
 #timer
 stop = timeit.default_timer()
