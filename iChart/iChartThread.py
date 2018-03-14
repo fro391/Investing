@@ -21,8 +21,8 @@ lock = threading.Lock()
 def getiChart (symbol):
     dt = datetime.datetime.now()
     UnixTime = int(time.mktime(dt.timetuple()))
-    #https://finance-yql.media.yahoo.com/v7/finance/chart/KING?period2=1430672173&period1=1378832173&interval=1d&indicators=quote%7Cbollinger~20-2%7Csma~50%7Csma~50%7Csma~50%7Cmfi~14%7Cmacd~26-12-9%7Crsi~14%7Cstoch~14-1-3&includeTimestamps=true&includePrePost=false&events=div%7Csplit%7Cearn&corsDomain=finance.yahoo.com
-    url='https://finance-yql.media.yahoo.com/v7/finance/chart/'+symbol+'?period2='+str(UnixTime)+'&period1='+str(UnixTime-86400*21)+'&interval=1d&indicators=quote%7Cbollinger~20-2%7Csma~50%7Csma~20%7Csma~5%7Cmfi~14%7Cmacd~26-12-9%7Crsi~14%7Cstoch~14-1-3&includeTimestamps=true&includePrePost=false&events=div%7Csplit%7Cearn&corsDomain=finance.yahoo.com'
+    #https://query1.finance.yahoo.com/v8/finance/chart/KING?period2=1430672173&period1=1378832173&interval=1d&indicators=quote%7Cbollinger~20-2%7Csma~50%7Csma~50%7Csma~50%7Cmfi~14%7Cmacd~26-12-9%7Crsi~14%7Cstoch~14-1-3&includeTimestamps=true&includePrePost=false&events=div%7Csplit%7Cearn&corsDomain=finance.yahoo.com
+    url='https://query1.finance.yahoo.com/v8/finance/chart/'+symbol+'?period2='+str(UnixTime)+'&period1='+str(UnixTime-86400*21)+'&interval=1d&indicators=quote%7Cbollinger~20-2%7Csma~50%7Csma~20%7Csma~5%7Cmfi~14%7Cmacd~26-12-9%7Crsi~14%7Cstoch~14-1-3&includeTimestamps=true&includePrePost=false&events=div%7Csplit%7Cearn&corsDomain=finance.yahoo.com'
     #use legitimate header so bot won't pick up
     hdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36',
        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
@@ -51,6 +51,7 @@ def getiChart (symbol):
         #last trade date and last closing price
         lastTradeDate = LASTTRADEDATE [-1]
         close = quote ['close'][-1]
+        close1 = quote ['close'][-2]
         opn = quote['open'][-1]
         high = quote['high'][-1]
         low= quote['low'][-1]
@@ -90,7 +91,7 @@ def getiChart (symbol):
             # of divergence over close price
             divergencePercent = float(divergence)/float(close)
             #variable to be written to file. this will still process if thread is locked
-            toBeWritten = (str(symbol)+datetime.datetime.today().strftime('%Y%m%d')+','+ str(BandWidth)+','+ str(BoilUpper)+','+str(close)+','+str(opn)+','+str(high)+','+str(low)+','+str(pChange)+','+str(avgV20Pct)+','+str(int(vol))+','+str(sma50pct)+','+ str(BoilLower)+','+ str(BoilPercent)+','+str(divergence)+','+str(signal)+','+str(macd)+','+str(divergencePercent)+','+str(rsi)+','+str(sma50)+','+str(sma20)+','+str(sma5)+','+str(mfi)+','+str(stochK)+','+str(stochD)+','+str(lastTradeDate)+'\n')
+            toBeWritten = (str(symbol)+datetime.datetime.today().strftime('%Y%m%d')+','+ str(BandWidth)+','+ str(BoilUpper)+','+str(close1)+','+str(close)+','+str(opn)+','+str(high)+','+str(low)+','+str(pChange)+','+str(avgV20Pct)+','+str(int(vol))+','+str(sma50pct)+','+ str(BoilLower)+','+ str(BoilPercent)+','+str(divergence)+','+str(signal)+','+str(macd)+','+str(divergencePercent)+','+str(rsi)+','+str(sma50)+','+str(sma20)+','+str(sma5)+','+str(mfi)+','+str(stochK)+','+str(stochD)+','+str(lastTradeDate)+'\n')
 
             lock.acquire()
             try:
@@ -111,7 +112,7 @@ threadlist = []
 
 #creating file in local directory
 with open('iChart'+strftime("%Y-%m-%d", gmtime())+'.csv', 'w+') as myfile:
-    myfile.write('Ticker&Date, BandWidth, BoilUpper, close, open, high, low, pChg%, vol%, vol, p50%, BoilLower, BoilPercent,divergence,signal,macd,divergence%,rsi,sma50,sma20,sma5,mfi,stochK,stochD,lastTradeDate'+'\n')
+    myfile.write('Ticker&Date, BandWidth, BoilUpper, close1, close, open, high, low, pChg%, vol%, vol, p50%, BoilLower, BoilPercent,divergence,signal,macd,divergence%,rsi,sma50,sma20,sma5,mfi,stochK,stochD,lastTradeDate'+'\n')
 
 #threading to append info into csv
 with open('iChart'+strftime("%Y-%m-%d", gmtime())+'.csv', 'a') as myfile:
@@ -131,12 +132,13 @@ with open('iChart'+strftime("%Y-%m-%d", gmtime())+'.csv', 'a') as myfile:
 
 #filtering and sorting
 iChart = pd.read_csv('iChart'+strftime("%Y-%m-%d", gmtime())+'.csv').dropna()
-iChart = iChart.ix[iChart[' p50%']>= 0.8,['Ticker&Date',' vol%', ' vol', ' pChg%',' close',' p50%']]
-iChart = iChart.ix[iChart[' vol']>= 2000000 ,['Ticker&Date',' vol%', ' vol', ' pChg%',' close',' p50%']]
-iChart = iChart.ix[iChart[' pChg%']> 0 ,['Ticker&Date',' vol%', ' vol', ' pChg%',' close',' p50%']]
-iChart = iChart.ix[iChart[' close']>= 2 ,['Ticker&Date',' vol%', ' vol', ' pChg%',' close',' p50%']]
-iChart = iChart.ix[iChart[' close']<= 20 ,['Ticker&Date', ' vol%', ' vol', ' pChg%',' close',' p50%']]
-iChart = iChart.ix[iChart[' vol%']>= 2 ,['Ticker&Date', ' vol%', ' vol', ' pChg%',' close',' p50%']]
+iChart = iChart.ix[iChart[' p50%']>= 0.8,['Ticker&Date',' vol%', ' vol', ' pChg%',' close',' close1',' open',' p50%']]
+iChart = iChart.ix[iChart[' vol']>= 2000000 ,['Ticker&Date',' vol%', ' vol', ' pChg%',' close',' close1',' open',' p50%']]
+iChart = iChart.ix[iChart[' pChg%']> 0 ,['Ticker&Date',' vol%', ' vol', ' pChg%',' close',' close1',' open',' p50%']]
+iChart = iChart.ix[iChart[' close']>= 2 ,['Ticker&Date',' vol%', ' vol', ' pChg%',' close',' close1',' open',' p50%']]
+iChart = iChart.ix[iChart[' close']<= 20 ,['Ticker&Date',' vol%', ' vol', ' pChg%',' close',' close1',' open',' p50%']]
+iChart = iChart.ix[iChart[' vol%']>= 2 ,['Ticker&Date',' vol%', ' vol', ' pChg%',' close',' close1',' open',' p50%']]
+iChart = iChart.ix[iChart[' close']>= iChart[' close1'] ,['Ticker&Date',' vol%', ' vol', ' pChg%',' close',' close1',' open',' p50%']]
 iChart = iChart.sort_values (' vol%', ascending=0)
 
 #email output
@@ -146,16 +148,17 @@ emailAddress = email_list[0]
 password = email_list[1]
 
 msg = MIMEText(str(iChart))
+recipients = [emailAddress, '@gmail.com']
 msg['Subject'] = '%s stock analysis: potentials - %s' % (str(datetime.datetime.today().strftime('%Y-%m-%d')), str(len(iChart)))
 msg['From'] = emailAddress
-msg['To'] = emailAddress
+msg['To'] = ', '.join(recipients)
 try:
     s = smtplib.SMTP('smtp-mail.outlook.com', 25)
     s.ehlo()  # Hostname to send for this command defaults to the fully qualified domain name of the local host.
     s.starttls()  # Puts connection to SMTP server in TLS mode
     s.ehlo()
     s.login(emailAddress, password)
-    s.sendmail(emailAddress, emailAddress, msg.as_string())
+    s.sendmail(emailAddress, recipients, msg.as_string())
     s.quit()
     print 'email sent to: %s' % emailAddress
 except:
