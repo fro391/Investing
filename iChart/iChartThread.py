@@ -31,10 +31,6 @@ def getiChart (symbol):
     try:
         request = urllib2.Request(url,headers = hdr)
         htmltext = urllib2.urlopen(request)
-    except:
-        pass
-
-    try:
         #dictionaries
         data = json.load(htmltext)
         quote = data['chart']['result'][0]['indicators']['quote'][0]
