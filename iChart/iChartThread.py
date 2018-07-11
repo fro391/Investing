@@ -33,72 +33,72 @@ def getiChart (symbol):
         htmltext = urllib2.urlopen(request)
         #dictionaries
         data = json.load(htmltext)
-        quote = data['chart']['result'][0]['indicators']['quote'][0]
-        boillinger = data['chart']['result'][0]['indicators']['bollinger'][0]
-        MACD = data['chart']['result'][0]['indicators']['macd'][0]
-        RSI = data['chart']['result'][0]['indicators']['rsi'][0]
-        SMA50 = data['chart']['result'][0]['indicators']['sma'][0]
-        SMA20 = data['chart']['result'][0]['indicators']['sma'][1]
-        SMA5 = data['chart']['result'][0]['indicators']['sma'][2]
-        MFI = data['chart']['result'][0]['indicators']['mfi'][0]
-        STOCH = data['chart']['result'][0]['indicators']['stoch'][0]
-        LASTTRADEDATE = data['chart']['result'][0]['timestamp']
+        if data['chart']['result'][0]['indicators']['quote'][0]['open'] >=1:
+            quote = data['chart']['result'][0]['indicators']['quote'][0]
+            boillinger = data['chart']['result'][0]['indicators']['bollinger'][0]
+            MACD = data['chart']['result'][0]['indicators']['macd'][0]
+            RSI = data['chart']['result'][0]['indicators']['rsi'][0]
+            SMA50 = data['chart']['result'][0]['indicators']['sma'][0]
+            SMA20 = data['chart']['result'][0]['indicators']['sma'][1]
+            SMA5 = data['chart']['result'][0]['indicators']['sma'][2]
+            MFI = data['chart']['result'][0]['indicators']['mfi'][0]
+            STOCH = data['chart']['result'][0]['indicators']['stoch'][0]
+            LASTTRADEDATE = data['chart']['result'][0]['timestamp']
 
-        #last trade date and last closing price
-        lastTradeDate = LASTTRADEDATE [-1]
-        close = quote ['close'][-1]
-        close1 = quote ['close'][-2]
-        opn = quote['open'][-1]
-        high = quote['high'][-1]
-        low= quote['low'][-1]
-        pChange = (close - opn)/float(opn)
+            #last trade date and last closing price
+            lastTradeDate = LASTTRADEDATE [-1]
+            close = quote ['close'][-1]
+            close1 = quote ['close'][-2]
+            opn = quote['open'][-1]
+            high = quote['high'][-1]
+            low= quote['low'][-1]
+            pChange = (close - opn)/float(opn)
 
-        vol = quote['volume'][-1]
-        #Vol as percentage of avg 20 days vol
-        avgV20Pct = vol / (sum(quote['volume'])/float(len(quote['volume'])))
+            vol = quote['volume'][-1]
+            #Vol as percentage of avg 20 days vol
+            avgV20Pct = vol / (sum(quote['volume'])/float(len(quote['volume'])))
 
-        #boillinger data
-        BoilUpper = boillinger['upper'][-1]
-        BoilLower = boillinger['lower'][-1]
-        BandWidth = float(BoilUpper)-float(BoilLower)
-        #MACD data
-        divergence = MACD['divergence'][-1]
-        signal = MACD ['signal'][-1]
-        macd = MACD ['macd'][-1]
-        #RSI data
-        rsi = RSI['rsi'][-1]
-        #SMA data
-        sma50 = SMA50['sma'][-1]
-        sma20 = SMA20['sma'][-1]
-        sma5 = SMA5['sma'][-1]
+            #boillinger data
+            BoilUpper = boillinger['upper'][-1]
+            BoilLower = boillinger['lower'][-1]
+            BandWidth = float(BoilUpper)-float(BoilLower)
+            #MACD data
+            divergence = MACD['divergence'][-1]
+            signal = MACD ['signal'][-1]
+            macd = MACD ['macd'][-1]
+            #RSI data
+            rsi = RSI['rsi'][-1]
+            #SMA data
+            sma50 = SMA50['sma'][-1]
+            sma20 = SMA20['sma'][-1]
+            sma5 = SMA5['sma'][-1]
 
-        #Avg price as percentage of sma50
-        sma50pct = ((close + opn + high + low)/4) / float(sma50)
+            #Avg price as percentage of sma50
+            sma50pct = ((close + opn + high + low)/4) / float(sma50)
 
-        #MFI data
-        mfi = MFI['mfi'][-1]
-        #STOCH
-        stochK = STOCH['k'][-1]
-        stochD = STOCH['d'][-1]
+            #MFI data
+            mfi = MFI['mfi'][-1]
+            #STOCH
+            stochK = STOCH['k'][-1]
+            stochD = STOCH['d'][-1]
 
-        if BandWidth != 0:
-            # percent of price in boillenger band
-            BoilPercent = (float(close) -float(BoilLower))/ BandWidth
-            # of divergence over close price
-            divergencePercent = float(divergence)/float(close)
-            #variable to be written to file. this will still process if thread is locked
-            toBeWritten = (str(symbol)+datetime.datetime.today().strftime('%Y%m%d')+','+ str(BandWidth)+','+ str(BoilUpper)+','+str(close1)+','+str(close)+','+str(opn)+','+str(high)+','+str(low)+','+str(pChange)+','+str(avgV20Pct)+','+str(int(vol))+','+str(sma50pct)+','+ str(BoilLower)+','+ str(BoilPercent)+','+str(divergence)+','+str(signal)+','+str(macd)+','+str(divergencePercent)+','+str(rsi)+','+str(sma50)+','+str(sma20)+','+str(sma5)+','+str(mfi)+','+str(stochK)+','+str(stochD)+','+str(lastTradeDate)+'\n')
-
-            lock.acquire()
-            try:
-                myfile.write(toBeWritten)
-            finally:
-                lock.release()
+            if BandWidth != 0:
+                # percent of price in boillenger band
+                BoilPercent = (float(close) -float(BoilLower))/ BandWidth
+                # of divergence over close price
+                divergencePercent = float(divergence)/float(close)
+                #variable to be written to file. this will still process if thread is locked
+                toBeWritten = (str(symbol)+datetime.datetime.today().strftime('%Y%m%d')+','+ str(BandWidth)+','+ str(BoilUpper)+','+str(close1)+','+str(close)+','+str(opn)+','+str(high)+','+str(low)+','+str(pChange)+','+str(avgV20Pct)+','+str(int(vol))+','+str(sma50pct)+','+ str(BoilLower)+','+ str(BoilPercent)+','+str(divergence)+','+str(signal)+','+str(macd)+','+str(divergencePercent)+','+str(rsi)+','+str(sma50)+','+str(sma20)+','+str(sma5)+','+str(mfi)+','+str(stochK)+','+str(stochD)+','+str(lastTradeDate)+'\n')
+                lock.acquire()
+                try:
+                    myfile.write(toBeWritten)
+                finally:
+                    lock.release()
 
     except Exception as ex:
         template = "An exception of type {0} occured. Arguments:\n{1!r}"
         message = template.format(type(ex).__name__, ex.args)
-        print message, symbol
+        print message, symbol, url
 
 symbolfile = open("symbols.txt")
 symbolslistR = symbolfile.read()
