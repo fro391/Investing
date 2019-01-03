@@ -144,7 +144,7 @@ emailAddress = email_list[0]
 password = email_list[1]
 
 msg = MIMEText(str(iChart))
-recipients = [emailAddress, 'michelleusdenski@gmail.com']
+recipients = [emailAddress, 'michelleusdenski@gmail.com','jacob.si@outlook.com']
 msg['Subject'] = '%s stock analysis: potentials - %s' % (str(datetime.datetime.today().strftime('%Y-%m-%d')), str(len(iChart)))
 msg['From'] = emailAddress
 msg['To'] = ', '.join(recipients)
